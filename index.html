@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royston's Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+          * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(18, 18, 62);
+    height: 80px;
+    padding: 0 140px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: rgb(154, 154, 247);
+    font-size: 1.02rem;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+.left {
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 3rem;
+    white-space: nowrap;
+}
+
+.leftsection .buttons {
+    padding: 50px 0;
+}
+
+.btn {
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rightsection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rightsection img {
+    width: 350px;
+    height: 450px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-left: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rightsection img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px #f3eded;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+    color: blueviolet;
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.secondsection h1 {
+    font-size: 1.9rem;
+}
+
+.experience-box {
+    background: white;
+    width: 80vw;
+    margin: 56px 0;
+    padding: 30px;
+    color: black;
+    border-radius: 8px;
+}
+
+.experience-box h2 {
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+.experience-box p {
+    font-size: 1rem;
+    color: gray;
+    margin-top: 10px;
+}
+
+footer {
+            background-color: #0e0e1a;
+            padding: 23px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer>div {
+            width: 223px;
+            margin: 10px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-rights {
+            color: gray;
+            padding: 12px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+/* Mobile-specific styles */
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1px 0;
+    }
+
+    .left {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px; /* Add space below the nav links */
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .firstsection {
+        flex-direction: column-reverse;
+        margin: 40px 20px;
+    }
+
+    .firstsection>div {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+        white-space: normal;
+    }
+
+    .leftsection .buttons {
+    padding: 20px 0;
+}
+
+.leftsection .buttons button {
+    margin: 10px; /* Adjust this value to increase or decrease spacing */
+}
+
+
+    .rightsection img {
+     
+        height: 250px;
+        margin: 20px 0;
+    }
+
+    .secondsection {
+        max-width: 95vw;
+    }
+
+    .experience-box {
+        width: 90vw;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    footer {
+            background-color: #0e0e1a;
+            padding: 23px;
+            margin-top: 50px;
+        }
+
+        .footer {
+        flex-direction: row; /* Ensure footer items are in a row */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: space-between; /* Space out items */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .footer>div {
+        width: auto;
+        margin: 10px;
+        text-align: center; /* Center text inside footer items */
+    }
+
+    .footer ul {
+        padding: 0;
+        display: flex;
+        flex-direction: row; /* Display items in a row */
+        justify-content: space-between; /* Space out items */
+        list-style: none; /* Remove bullets */
+    }
+
+    .footer ul li {
+        margin: 0 10px; /* Adjust margin between items */
+    }
+
+    .footer-rights {
+        font-size: 0.8rem;}}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Royston's Portfolio</div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/skill.html">Skills</a></li>
+                    
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                HI, My name is <span class="purple">Royston</span>
+                <div>and I'm a passionate About</div>
+
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1u0tC0Jhb30KlkDAasOkFd70FaLAtGnK7/view?usp=sharing" target="_blank" style="display: inline-block; position: relative;">
+                        <button class="btn" style="position: relative; z-index: 1;">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/royprojects" target="_blank" style="display: inline-block; position: relative;">
+                        <button class="btn" style="position: relative; z-index: 1;">Visit Github</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="royst.jpg" alt="Royston's image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>My Projects</h1>
+            <div class="experience-box">
+                <h2>Securvotex</h2>
+                <p><strong>Technologies:</strong> Django, Python, SQLite (development), IDE - VS Code</p>
+                <p>A secure electronic voting system utilizing token-based authentication along with One Time Password
+                    (OTP) verification. Allows registered voters to securely cast their votes online for candidates in
+                    an election.</p>
+            </div>
+            <div class="experience-box">
+                <h2>ChatXpert</h2>
+                <p><strong>Technologies:</strong> Streamlit, Python, SQLite (development)</p>
+                <p>An innovative project aimed at revolutionizing human-computer interactions by combining the power of
+                    ChatGPT and DALL-E. Built on the Streamlit framework, ChatXpert offers a seamless and intuitive user
+                    interface for natural conversations and stunning visual content generation.</p>
+            </div>
+            <div class="experience-box">
+                <h2>Fashion Hub</h2>
+                <p><strong>Technologies:</strong> Django, Python, SQLite (development), IDE - VS Code</p>
+                <p>A feature-rich and user-centric e-commerce platform for fashion enthusiasts and sellers worldwide.
+                    Fashion-Hub offers an intuitive seller management system and a powerful dashboard for administrators
+                    to oversee the platform’s operations.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Royston's Portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>About</li>
+                    
+                   
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    
+                    <li>Skills</li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.RoystonsPortfolio.com | All Rights Reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Django Development', 'Python Programming', 'Web Development', 'Networking', 'Cybersecurity', 'Software Engineering'],
+            typeSpeed: 50,
+            loop: true, // This makes the text repeat indefinitely
+        });
+    </script>
+    
+</body>
+
+</html>

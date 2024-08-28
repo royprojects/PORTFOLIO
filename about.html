@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Royston</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(18, 18, 62);
+            height: 80px;
+            padding: 0 120px;
+        }
+
+        nav .left {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+        }
+
+        nav ul li a:hover {
+            color: rgb(154, 154, 247);
+            font-size: 1.02rem;
+        }
+
+        .about-section {
+            max-width: 80vw;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .about-section h1 {
+            font-size: 2.5rem;
+            color: blueviolet;
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .about-content .left-section {
+            width: 45%;
+            font-size: 1.1rem;
+        }
+
+        .about-content .left-section p {
+            margin-bottom: 20px;
+            color: gray;
+        }
+
+        .about-content .right-section {
+            width: 45%;
+        }
+
+        .about-content .right-section img {
+            width: auto;
+            max-height: 450px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            padding: 23px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer>div {
+            width: 223px;
+            margin: 10px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-rights {
+            color: gray;
+            padding: 12px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Mobile-specific styles */
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 1px 0;
+                height: 100px;
+            }
+
+            nav .left {
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            nav ul li {
+                margin: 10px 10px;
+            }
+
+            .about-section {
+                max-width: 90vw;
+                margin: 30px auto;
+            }
+
+            .about-section h1 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-content .left-section,
+            .about-content .right-section {
+                width: 100%;
+                text-align: left;
+                padding: 0 15px;
+            }
+
+            .about-content .right-section img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            footer {
+            background-color: #0e0e1a;
+            padding: 23px;
+            margin-top: 50px;
+        }
+
+        .footer {
+        flex-direction: row; /* Ensure footer items are in a row */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: space-between; /* Space out items */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .footer>div {
+        width: auto;
+        margin: 10px;
+        text-align: center; /* Center text inside footer items */
+    }
+
+    .footer ul {
+        padding: 0;
+        display: flex;
+        flex-direction: row; /* Display items in a row */
+        justify-content: space-between; /* Space out items */
+        list-style: none; /* Remove bullets */
+    }
+
+    .footer ul li {
+        margin: 0 10px; /* Adjust margin between items */
+    }
+
+    .footer-rights {
+        font-size: 0.8rem;}}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Royston's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/skill.html">Skills</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <div class="left-section">
+                <p>Hi, I'm <strong>Royston Saldanha</strong>, a passionate fresher starting out in the tech industry. I've recently completed my MCA and am eager to apply my knowledge in real-world projects.</p>
+                <p>My interests span across various domains including web development, networking, cybersecurity, and software engineering. I've worked on a few exciting projects like Securvotex, ChatXpert, and Fashion Hub, which have given me hands-on experience with technologies like Django, Python, and Streamlit.</p>
+                <p>I am enthusiastic about learning and growing in this field, and I am looking forward to contributing to innovative projects and collaborating with talented professionals.</p>
+            </div>
+            <div class="right-section">
+                <img src="royst.jpg" alt="Royston's image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Royston's Portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li>Skills</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.RoystonsPortfolio.com | All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>

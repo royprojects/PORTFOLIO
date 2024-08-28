@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royston's Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(18, 18, 62);
+            height: 80px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(154, 154, 247);
+            font-size: 1.02rem;
+        }
+
+        .skills-section {
+            max-width: 80vw;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .skills-section h1 {
+            font-size: 2.5rem;
+            color: blueviolet;
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .skill-box {
+            background-color: rgb(18, 18, 62);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: blueviolet;
+        }
+
+        .skill-box ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .skill-box ul li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: gray;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            padding: 23px;
+            margin-top: 50px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        /* Mobile-specific styles */
+       /* Mobile-specific styles */
+/* Mobile-specific styles */
+
+    @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 1px 0;
+                height: 100px;
+            }
+
+            nav .left {
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            nav ul li {
+                margin: 10px 10px;
+            }
+    .skills-section {
+        max-width: 90vw;
+        margin: 30px auto;
+    }
+
+    .skills-section h1 {
+        font-size: 2rem;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for mobile */
+        gap: 20px;
+    }
+
+    .footer {
+        flex-direction: row; /* Ensure footer items are in a row */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: space-between; /* Space out items */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .footer>div {
+        width: auto;
+        margin: 10px;
+        text-align: center; /* Center text inside footer items */
+    }
+
+    .footer ul {
+        padding: 0;
+        display: flex;
+        flex-direction: row; /* Display items in a row */
+        justify-content: space-between; /* Space out items */
+        list-style: none; /* Remove bullets */
+    }
+
+    .footer ul li {
+        margin: 0 10px; /* Adjust margin between items */
+    }
+
+    .footer-rights {
+        font-size: 0.8rem;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Royston's Portfolio</div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/skill.html">Skills</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="skills-section">
+        <h1>My Skills</h1>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Technologies & Frameworks</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Django</li>
+                    <li>MongoDB</li>
+                    <li>Streamlit</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Developer Tools</h3>
+                <ul>
+                    <li>VS Code</li>
+                    <li>PyCharm</li>
+                    <li>IntelliJ</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Coursework</h3>
+                <ul>
+                    <li>Cyber Security</li>
+                    <li>Operating Systems</li>
+                    <li>Networking</li>
+                    <li>OOP Concepts</li>
+                    <li>Web Development</li>
+                    <li>Cloud Computing</li>
+                    <li>Software Engineering</li>
+                    <li>DBMS</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Microsoft Cybersecurity Analyst - Coursera</li>
+                    <li>Vulnerability Scanning with Nmap: Network Scanning - Coursera</li>
+                    <li>Networking Fundamentals - Coursera</li>
+                    <li>Web Development - Course</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Extracurricular</h3>
+                <ul>
+                    <li>ICYM Vice-president</li>
+                    <li>NCC Cadet</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Royston's Portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    
+                    <li>About</li>
+                   
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    
+                    <li>Skills</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.RoystonsPortfolio.com | All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
